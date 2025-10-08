@@ -260,12 +260,12 @@ async def yandex_categories_pagination(callback: types.CallbackQuery):
     )
 
 
-@router.callback_query(lambda c: c.data.startswith("yandex_"))
+@router.callback_query(lambda c: c.data.startswith("yandex_") and not c.data.startswith(("yandex_product_", "yandex_products_page_")) )
 async def yandex_category_callback(callback: types.CallbackQuery):
     await callback.answer()
     chat_id = callback.message.chat.id
 
-    category_hash = callback.data.split("_")[1]
+    category_hash = callback.data.split("_")[-1]
     categories = categories_cache.get(chat_id, [])
     category = next(
         (c for c in categories if hashlib.md5(c["title"].encode()).hexdigest()[:8] == category_hash),

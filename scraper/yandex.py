@@ -6,6 +6,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import TimeoutException, NoSuchElementException
 
 CATEGORY_FILE = "ke.json"
 PRODUCT_FILE = "yandex_products.json"
@@ -28,7 +29,20 @@ def get_yandex_categories(link):
     try:
         driver.get(link)
         wait = WebDriverWait(driver, 15)
-
+        # --- Проверка и закрытие модалки ---
+        try:
+            modal = WebDriverWait(driver, 15).until(
+                EC.presence_of_element_located((By.CSS_SELECTOR, "div[role='dialog']"))
+            )
+            print("Модалка найдена. Закрываем...")
+            close_btn = modal.find_element(By.CSS_SELECTOR, "button[data-auto='close-popup']")
+            close_btn.click()
+            print("Модалка закрыта.")
+            time.sleep(1)
+        except TimeoutException:
+            print("Модалка не появилась — продолжаем дальше.")
+        except NoSuchElementException:
+            print("Кнопка закрытия не найдена — возможно, другая модалка.")
         catalog_btn = WebDriverWait(driver, 15).until(
             EC.element_to_be_clickable((By.CSS_SELECTOR, "div[data-zone-name='catalog']"))
         )
