@@ -42,26 +42,28 @@ Here’s how **MindBuy** works in Telegram 👇
 ```bash
 git clone https://github.com/behruzbekrizaviddinov-ai/telegram-bot-market.git
 cd telegram-bot-market
-
-2️⃣ Install dependencies
-pip install -r requirements.txt
-
-3️⃣ Run the bot
+```
+### 2️⃣ Install dependencies
+```
+pip install aiogram
+pip install selenium
+pip install asyncio
+```
+### 3️⃣ Run the bot
+```
 python main.py
-
-📂 Project Structure
+```
+### 📂 Project Structure
+```
 telegram-bot-market/
 │
 ├── main.py              # Bot entry point
 ├── handler/             # Command handlers
 ├── keyboard/            # Inline and reply keyboards
 ├── scraper/             # Marketplace data parser
-├── data/                # JSON data files
-├── demo.gif             # Demo or screenshot
-├── README.md            # Project documentation
-└── requirements.txt     # Dependencies
-
-🚀 Future Plans
+└── README.md            # Project documentation
+```
+## 🚀 Future Plans
 
 📈 Product price history tracking
 
@@ -71,7 +73,8 @@ telegram-bot-market/
 
 🤖 AI-based product recommendations
 
-📌 Usage Examples
+## 📌 Usage Examples
 
 🏁 Start the bot
+
 /start
