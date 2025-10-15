@@ -43,17 +43,18 @@ git clone https://github.com/behruzbekrizaviddinov-ai/mindbuy-bot.git
 cd mindbuy-bot
 ```
 ### 2️⃣ Create and activate a virtual environment
+Make sure Python 3.11+ is installed. Then create and activate a virtual environment:
 ```
 python -m venv .venv
-
+```
 
 Windows:
-
+```
 .venv\Scripts\activate
-
+```
 
 macOS / Linux:
-
+```
 source .venv/bin/activate
 ```
 
@@ -87,42 +88,6 @@ INFO:aiogram:Bot polling has started
 
 Then open your bot in Telegram (e.g., @MindBuyBot) and send /start.
 ```
-## 📂 Project Structure
-```
-mindbuy-bot/
-│
-├── main.py              # Bot entry point
-├── handler/             # Command handlers
-├── keyboard/            # Inline and reply keyboards
-├── scraper/             # Marketplace data parser
-└── README.md            # Project documentation
-```
-## 🚀 Future Plans
-```
-📈 Product price history tracking
-
-🌍 Support for more marketplaces
-
-📊 Extended analytics and reports
-
-🤖 AI-based product recommendations
-```
-## 📌 Usage Examples
-
-🏁 Start the bot
-```
-/start
-```
-
-💬 Show available commands
-```
-/help
-```
-
-🛍️ View marketplace categories
-```
-/market
-```
 ## 🧩 Common Errors
 ```
 Error	Cause	Solution
@@ -142,16 +107,16 @@ python-dotenv	Environment configuration
 JSON	Local data storage
 ```
 
-## 📜 License
+## 📂 Project Structure
 ```
-This project is licensed under the MIT License.
-Feel free to use, modify, and share for educational or personal purposes.
-
-Author: Bexruzbek Rizaviddinov & Sariev Doston
+mindbuy-bot/
+│
+├── main.py              # Bot entry point
+├── handler/             # Command handlers
+├── keyboard/            # Inline and reply keyboards
+├── scraper/             # Marketplace data parser
+└── README.md            # Project documentation
 ```
-📧 For collaboration or support — feel free to reach out!
-
-
 ---
 
 ## 📄 **requirements.txt**
@@ -176,3 +141,32 @@ CHROME_PATH=C:\path\to\chromedriver.exe
 ```
 LOG_LEVEL=INFO
 ```
+## 📌 Usage Examples
+
+🏁 Start the bot
+```
+/start
+```
+
+💬 Show available commands
+```
+/help
+```
+## 🚀 Future Plans
+```
+📈 Product price history tracking
+
+🌍 Support for more marketplaces
+
+📊 Extended analytics and reports
+
+🤖 AI-based product recommendations
+```
+## 📜 License
+```
+This project is licensed under the MIT License.
+Feel free to use, modify, and share for educational or personal purposes.
+
+Author: Bexruzbek Rizaviddinov & Sariev Doston
+```
+📧 For collaboration or support — feel free to reach out!
