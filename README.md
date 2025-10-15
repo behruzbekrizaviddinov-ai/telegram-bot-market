@@ -43,7 +43,7 @@ git clone https://github.com/behruzbekrizaviddinov-ai/mindbuy-bot.git
 cd mindbuy-bot
 ```
 ### 2️⃣ Create and activate a virtual environment
-Make sure Python 3.11+ is installed. Then create and activate a virtual environment:
+Make sure Python 3.10+ is installed. Then create and activate a virtual environment:
 ```
 python -m venv .venv
 ```
@@ -79,15 +79,13 @@ CHROME_PATH — Full path to chromedriver.exe (used by Selenium)
 ### 5️⃣ Run the bot
 ```
 python main.py
-
-
+```
 You should see:
-
+```
 INFO:aiogram:Bot polling has started
-
+```
 
 Then open your bot in Telegram (e.g., @MindBuyBot) and send /start.
-```
 ## 🧩 Common Errors
 ```
 Error	Cause	Solution
@@ -99,7 +97,7 @@ SessionNotCreatedException	Chrome/ChromeDriver mismatch	Install matching ChromeD
 ## 🧠 Tech Stack
 ```
 Technology	Purpose
-Python 3.11+	Core language
+Python 3.10+	Core language
 Aiogram	Telegram bot framework
 Selenium	Web scraping and automation
 Asyncio	Asynchronous operations
