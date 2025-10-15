@@ -171,13 +171,17 @@ asyncio
 python-dotenv
 requests
 ```
-## ⚙️ .env.example
+### ⚙️ .env.example
 
-# Telegram bot token (get it from @BotFather)
+## Telegram bot token (get it from @BotFather)
+```
 TOKEN=your_telegram_bot_token
-
-# Full path to your ChromeDriver executable
+```
+## Full path to your ChromeDriver executable
+```
 CHROME_PATH=C:\path\to\chromedriver.exe
-
-# Optional logging level
+```
+## Optional logging level
+```
 LOG_LEVEL=INFO
+```
