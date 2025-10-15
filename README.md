@@ -31,7 +31,7 @@ MindBuy is an intelligent Telegram bot that helps users quickly find categories,
 ## 📽 Demo
 Here’s how MindBuy works in Telegram 👇  
 
-![MindBuy Demo](https://github.com/user-attachments/assets/IMG_9597)
+![MindBuy Demo]([https://github.com/user-attachments/assets/IMG_9597](https://github.com/user-attachments/assets/393f72e0-ef52-4cb0-8670-d601f193838b))
 
 ---
 
