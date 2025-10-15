@@ -32,7 +32,7 @@ MindBuy is an intelligent Telegram bot that helps users quickly find categories,
 Here’s how MindBuy works in Telegram 👇  
 *(Insert a GIF or screenshot of your bot here)*
 
-![MindBuy Demo](https://github.com/user-attachments/assets/example-image.png)
+![MindBuy Demo](https://github.com/user-attachments/assets/)
 
 ---
 
@@ -67,7 +67,7 @@ pip install -r requirements.txt
 ```
 Create a .env file in the project root:
 
-TOKEN=your_telegram_bot_token
+TOKEN=8469918338:AAHvoFEjjzB0R7S8fQ0t5LDDerUsfx8m1to
 CHROME_PATH=path_to_chromedriver.exe
 
 
@@ -173,9 +173,9 @@ requests
 ```
 ### ⚙️ .env.example
 
-## Telegram bot token (get it from @BotFather)
+## Telegram bot token
 ```
-TOKEN=your_telegram_bot_token
+8469918338:AAHvoFEjjzB0R7S8fQ0t5LDDerUsfx8m1to
 ```
 ## Full path to your ChromeDriver executable
 ```
