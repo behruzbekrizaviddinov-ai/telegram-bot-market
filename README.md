@@ -120,18 +120,19 @@ mindbuy-bot/
 ## 📌 Usage Examples
 ```
 🏁 Start the bot
-
+```
 /start
-
+```
 
 💬 Show available commands
-
+```
 /help
-
+```
 
 🛍️ View marketplace categories
-
+```
 /market
+```
 ```
 ## 🧠 Tech Stack
 ```
