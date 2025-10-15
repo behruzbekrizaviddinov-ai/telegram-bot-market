@@ -118,7 +118,7 @@ mindbuy-bot/
 🤖 AI-based product recommendations
 ```
 ## 📌 Usage Examples
-```
+
 🏁 Start the bot
 ```
 /start
@@ -132,7 +132,6 @@ mindbuy-bot/
 🛍️ View marketplace categories
 ```
 /market
-```
 ```
 ## 🧠 Tech Stack
 ```
