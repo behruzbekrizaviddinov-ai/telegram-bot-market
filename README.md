@@ -30,9 +30,8 @@ MindBuy is an intelligent Telegram bot that helps users quickly find categories,
 
 ## 📽 Demo
 Here’s how MindBuy works in Telegram 👇  
-*(Insert a GIF or screenshot of your bot here)*
 
-![MindBuy Demo](https://github.com/user-attachments/assets/)
+![MindBuy Demo](https://github.com/user-attachments/assets/IMG_9597)
 
 ---
 
@@ -60,8 +59,9 @@ source .venv/bin/activate
 
 ### 3️⃣ Install dependencies
 ```
-python -m pip install --upgrade pip setuptools wheel
-pip install -r requirements.txt
+pip install aiogram
+pip install selenium
+pip install asyncio
 ```
 ### 4️⃣ Configure environment variables
 ```
@@ -92,19 +92,9 @@ Then open your bot in Telegram (e.g., @MindBuyBot) and send /start.
 mindbuy-bot/
 │
 ├── main.py              # Bot entry point
-├── handlers/            # Command and message handlers
-│   ├── start.py
-│   ├── help.py
-│   └── market.py
-├── keyboards/           # Inline and reply keyboards
-│   └── inline.py
-├── scrapers/            # Marketplace scrapers (Uzum, Yandex, etc.)
-│   ├── uzum_scraper.py
-│   └── yandex_scraper.py
-├── products.json        # Stored product data
-├── categories.json      # Stored category data
-├── .env.example         # Environment variables template
-├── requirements.txt     # Dependencies list
+├── handler/             # Command handlers
+├── keyboard/            # Inline and reply keyboards
+├── scraper/             # Marketplace data parser
 └── README.md            # Project documentation
 ```
 ## 🚀 Future Plans
