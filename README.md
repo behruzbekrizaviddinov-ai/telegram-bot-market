@@ -1,3 +1,4 @@
+📘 README.md
 # 🧠 MindBuy — Smart Telegram Bot for Marketplaces
 
 MindBuy is an intelligent Telegram bot that helps users quickly find categories, search for products, compare prices, and get marketplace analytics — all directly inside Telegram.
@@ -5,13 +6,13 @@ MindBuy is an intelligent Telegram bot that helps users quickly find categories,
 ---
 
 ## 📚 Navigation
-
-- [Features](#features)
-- [Demo](#demo)
-- [Installation](#installation)
-- [Project Structure](#project-structure)
-- [Future Plans](#future-plans)
-- [Usage Examples](#usage-examples)
+- [Features](#-features)
+- [Demo](#-demo)
+- [Installation](#-installation)
+- [Project Structure](#-project-structure)
+- [Future Plans](#-future-plans)
+- [Usage Examples](#-usage-examples)
+- [Tech Stack](#-tech-stack)
 
 ---
 
@@ -28,43 +29,86 @@ MindBuy is an intelligent Telegram bot that helps users quickly find categories,
 ---
 
 ## 📽 Demo
+Here’s how MindBuy works in Telegram 👇  
+*(Insert a GIF or screenshot of your bot here)*
 
-Here’s how **MindBuy** works in Telegram 👇  
-
-![MindBuy Demo](https://github.com/user-attachments/assets/393f72e0-ef52-4cb0-8670-d601f193838b)
+![MindBuy Demo](https://github.com/user-attachments/assets/example-image.png)
 
 ---
-
 
 ## 🛠 Installation
 
 ### 1️⃣ Clone the repository
 ```bash
-git clone https://github.com/behruzbekrizaviddinov-ai/telegram-bot-market.git
-cd telegram-bot-market
+git clone https://github.com/behruzbekrizaviddinov-ai/mindbuy-bot.git
+cd mindbuy-bot
 ```
-### 2️⃣ Install dependencies
+### 2️⃣ Create and activate a virtual environment
 ```
-pip install aiogram
-pip install selenium
-pip install asyncio
+python -m venv .venv
+
+
+Windows:
+
+.venv\Scripts\activate
+
+
+macOS / Linux:
+
+source .venv/bin/activate
 ```
-### 3️⃣ Run the bot
+
+### 3️⃣ Install dependencies
+```
+python -m pip install --upgrade pip setuptools wheel
+pip install -r requirements.txt
+```
+### 4️⃣ Configure environment variables
+```
+Create a .env file in the project root:
+
+TOKEN=your_telegram_bot_token
+CHROME_PATH=path_to_chromedriver.exe
+
+
+TOKEN — Telegram bot token from @BotFather
+
+CHROME_PATH — Full path to chromedriver.exe (used by Selenium)
+```
+### 5️⃣ Run the bot
 ```
 python main.py
+
+
+You should see:
+
+INFO:aiogram:Bot polling has started
+
+
+Then open your bot in Telegram (e.g., @MindBuyBot) and send /start.
 ```
-### 📂 Project Structure
+## 📂 Project Structure
 ```
-telegram-bot-market/
+mindbuy-bot/
 │
 ├── main.py              # Bot entry point
-├── handler/             # Command handlers
-├── keyboard/            # Inline and reply keyboards
-├── scraper/             # Marketplace data parser
+├── handlers/            # Command and message handlers
+│   ├── start.py
+│   ├── help.py
+│   └── market.py
+├── keyboards/           # Inline and reply keyboards
+│   └── inline.py
+├── scrapers/            # Marketplace scrapers (Uzum, Yandex, etc.)
+│   ├── uzum_scraper.py
+│   └── yandex_scraper.py
+├── products.json        # Stored product data
+├── categories.json      # Stored category data
+├── .env.example         # Environment variables template
+├── requirements.txt     # Dependencies list
 └── README.md            # Project documentation
 ```
 ## 🚀 Future Plans
-
+```
 📈 Product price history tracking
 
 🌍 Support for more marketplaces
@@ -72,9 +116,68 @@ telegram-bot-market/
 📊 Extended analytics and reports
 
 🤖 AI-based product recommendations
-
+```
 ## 📌 Usage Examples
-
+```
 🏁 Start the bot
 
 /start
+
+
+💬 Show available commands
+
+/help
+
+
+🛍️ View marketplace categories
+
+/market
+```
+## 🧠 Tech Stack
+```
+Technology	Purpose
+Python 3.11+	Core language
+Aiogram	Telegram bot framework
+Selenium	Web scraping and automation
+Asyncio	Asynchronous operations
+python-dotenv	Environment configuration
+JSON	Local data storage
+```
+## 🧩 Common Errors
+```
+Error	Cause	Solution
+ValueError: The path is not a valid file	Invalid ChromeDriver path	Check CHROME_PATH in .env
+telegram.error.Unauthorized	Invalid bot token	Get a new one from @BotFather
+
+SessionNotCreatedException	Chrome/ChromeDriver mismatch	Install matching ChromeDriver
+```
+## 📜 License
+```
+This project is licensed under the MIT License.
+Feel free to use, modify, and share for educational or personal purposes.
+
+Author: Bexruzbek Rizaviddinov & Sariev Doston
+```
+📧 For collaboration or support — feel free to reach out!
+
+
+---
+
+## 📄 **requirements.txt**
+```txt
+aiogram==3.3.0
+selenium==4.20.0
+asyncio
+python-dotenv
+requests
+```
+## ⚙️ .env.example
+
+# Telegram bot token (get it from @BotFather)
+TOKEN=your_telegram_bot_token
+
+# Full path to your ChromeDriver executable
+CHROME_PATH=C:\path\to\chromedriver.exe
+
+# Optional logging level
+LOG_LEVEL=INFO
