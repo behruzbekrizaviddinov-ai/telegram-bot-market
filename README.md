@@ -9,10 +9,10 @@ MindBuy is an intelligent Telegram bot that helps users quickly find categories,
 - [Features](#-features)
 - [Demo](#-demo)
 - [Installation](#-installation)
-- [Project Structure](#-project-structure)
-- [Future Plans](#-future-plans)
-- [Usage Examples](#-usage-examples)
 - [Tech Stack](#-tech-stack)
+- [Project Structure](#-project-structure)
+- [Usage Examples](#-usage-examples)
+- [Future Plans](#-future-plans)
 
 ---
 
