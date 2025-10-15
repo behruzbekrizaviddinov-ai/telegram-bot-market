@@ -123,6 +123,14 @@ mindbuy-bot/
 ```
 /market
 ```
+## 🧩 Common Errors
+```
+Error	Cause	Solution
+ValueError: The path is not a valid file	Invalid ChromeDriver path	Check CHROME_PATH in .env
+telegram.error.Unauthorized	Invalid bot token	Get a new one from @BotFather
+
+SessionNotCreatedException	Chrome/ChromeDriver mismatch	Install matching ChromeDriver
+```
 ## 🧠 Tech Stack
 ```
 Technology	Purpose
@@ -133,14 +141,7 @@ Asyncio	Asynchronous operations
 python-dotenv	Environment configuration
 JSON	Local data storage
 ```
-## 🧩 Common Errors
-```
-Error	Cause	Solution
-ValueError: The path is not a valid file	Invalid ChromeDriver path	Check CHROME_PATH in .env
-telegram.error.Unauthorized	Invalid bot token	Get a new one from @BotFather
 
-SessionNotCreatedException	Chrome/ChromeDriver mismatch	Install matching ChromeDriver
-```
 ## 📜 License
 ```
 This project is licensed under the MIT License.
