@@ -64,19 +64,7 @@ pip install aiogram
 pip install selenium
 pip install asyncio
 ```
-### 4️⃣ Configure environment variables
-```
-Create a .env file in the project root:
-
-TOKEN=8469918338:AAHvoFEjjzB0R7S8fQ0t5LDDerUsfx8m1to
-CHROME_PATH=path_to_chromedriver.exe
-
-
-TOKEN — Telegram bot token from @BotFather
-
-CHROME_PATH — Full path to chromedriver.exe (used by Selenium)
-```
-### 5️⃣ Run the bot
+### 4️⃣ Run the bot
 ```
 python main.py
 ```
@@ -117,15 +105,7 @@ mindbuy-bot/
 ```
 ---
 
-## 📄 **requirements.txt**
-```txt
-aiogram==3.3.0
-selenium==4.20.0
-asyncio
-python-dotenv
-requests
-```
-### ⚙️ .env.example
+### ⚙️
 
 ## Telegram bot token
 ```
