@@ -9,7 +9,6 @@ MindBuy is an intelligent Telegram bot that helps users quickly find categories,
 - [Features](#-features)
 - [Demo](#-demo)
 - [Installation](#-installation)
-- [Quick Start](#-quick-start)
 - [Tech Stack](#-tech-stack)
 - [Project Structure](#-project-structure)
 - [Usage Examples](#-usage-examples)
@@ -103,14 +102,6 @@ ValueError: The path is not a valid file	Invalid ChromeDriver path	Check CHROME_
 telegram.error.Unauthorized	Invalid bot token	Get a new one from @BotFather
 
 SessionNotCreatedException	Chrome/ChromeDriver mismatch	Install matching ChromeDriver
-```
----
-## ⚠️ Quick Start
-```
-If you run on a clean machine:
-1. Install Google Chrome and ChromeDriver.
-2. Insert your Telegram bot token inside `main.py` (see step 4).
-3. Run `python main.py`.
 ```
 ---
 
