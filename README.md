@@ -42,44 +42,59 @@ Here’s how MindBuy works in Telegram 👇
 git clone https://github.com/behruzbekrizaviddinov-ai/mindbuy-bot.git
 cd mindbuy-bot
 ```
+
 ### 2️⃣ Create and activate a virtual environment
 Make sure Python 3.8+ is installed. Then create and activate a virtual environment:
+
 ```
 python -m venv .venv
+
 ```
 
 Windows:
+
 ```
 .venv\Scripts\activate
+
 ```
 
 macOS / Linux:
+
 ```
 source .venv/bin/activate
+
 ```
 
 ### 3️⃣ Install dependencies
+
 ```
 pip install aiogram
 pip install selenium
 pip install asyncio
+
 ```
 ### 4️⃣ Configure Environment Variables
+
 ```
 In main.py / TOKEN=your_bot_token_from_BotFather 
 In scrapers / uzum.py and yandex.py / CHROME_PATH=C:\Users\user\Desktop\mindbuy_bot\chromedriver.exe
+
 ```
 
 ### 5️⃣ Run the bot
+
 ```
 python main.py
+
 ```
 You should see:
+
 ```
 INFO:aiogram:Bot polling has started
-```
 
+```
 Then open your bot in Telegram (e.g., @MindBuyBot) and send /start.
+
 ## 🧩 Common Errors
 ```
 Error	Cause	Solution
@@ -88,6 +103,8 @@ telegram.error.Unauthorized	Invalid bot token	Get a new one from @BotFather
 
 SessionNotCreatedException	Chrome/ChromeDriver mismatch	Install matching ChromeDriver
 ```
+---
+
 ## 🧠 Tech Stack
 ```
 Technology	Purpose
@@ -97,7 +114,9 @@ Selenium	Web scraping and automation
 Asyncio	Asynchronous operations
 python-dotenv	Environment configuration
 JSON	Local data storage
+
 ```
+---
 
 ## 📂 Project Structure
 ```
@@ -119,10 +138,9 @@ MindBuy/
 │
 ├── products.json         # Saved products
 └── README.md             # Project documentation
----
 
+```
 ### ⚙️
-
 ## Telegram bot token
 ```
 8469918338:AAHvoFEjjzB0R7S8fQ0t5LDDerUsfx8m1to
@@ -135,6 +153,8 @@ CHROME_PATH=C:\path\to\chromedriver.exe
 ```
 LOG_LEVEL=INFO
 ```
+---
+
 ## 📌 Usage Examples
 
 🏁 Start the bot
@@ -146,6 +166,8 @@ LOG_LEVEL=INFO
 ```
 /help
 ```
+---
+
 ## 🚀 Future Plans
 ```
 📈 Product price history tracking
