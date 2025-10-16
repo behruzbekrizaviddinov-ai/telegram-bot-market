@@ -43,7 +43,7 @@ git clone https://github.com/behruzbekrizaviddinov-ai/mindbuy-bot.git
 cd mindbuy-bot
 ```
 ### 2️⃣ Create and activate a virtual environment
-Make sure Python 3.10+ is installed. Then create and activate a virtual environment:
+Make sure Python 3.8+ is installed. Then create and activate a virtual environment:
 ```
 python -m venv .venv
 ```
@@ -85,7 +85,7 @@ SessionNotCreatedException	Chrome/ChromeDriver mismatch	Install matching ChromeD
 ## 🧠 Tech Stack
 ```
 Technology	Purpose
-Python 3.10+	Core language
+Python 3.8+	Core language
 Aiogram	Telegram bot framework
 Selenium	Web scraping and automation
 Asyncio	Asynchronous operations
