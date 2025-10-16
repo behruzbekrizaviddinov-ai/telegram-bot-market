@@ -64,7 +64,13 @@ pip install aiogram
 pip install selenium
 pip install asyncio
 ```
-### 4️⃣ Run the bot
+### 4️⃣ Configure Environment Variables
+```
+In main.py / TOKEN=your_bot_token_from_BotFather 
+In scrapers / uzum.py and yandex.py / CHROME_PATH=C:\Users\user\Desktop\mindbuy_bot\chromedriver.exe
+```
+
+### 5️⃣ Run the bot
 ```
 python main.py
 ```
@@ -95,14 +101,24 @@ JSON	Local data storage
 
 ## 📂 Project Structure
 ```
-mindbuy-bot/
+MindBuy/
 │
-├── main.py              # Bot entry point
-├── handler/             # Command handlers
-├── keyboard/            # Inline and reply keyboards
-├── scraper/             # Marketplace data parser
-└── README.md            # Project documentation
-```
+├── main.py               # Bot entry point
+├── handlers/             # Command handlers
+│   ├── _init_.py
+│   └── router.py
+│
+├── keyboards/            # Inline and reply keyboards
+│   ├── _init_.py
+│   └── inline_button.py
+│
+├── scrapers/             # Marketplace data parser
+│   ├── _init_.py
+│   ├── uzum.py
+│   └── yandex.py
+│
+├── products.json         # Saved products
+└── README.md             # Project documentation
 ---
 
 ### ⚙️
