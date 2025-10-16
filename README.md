@@ -105,7 +105,7 @@ telegram.error.Unauthorized	Invalid bot token	Get a new one from @BotFather
 SessionNotCreatedException	Chrome/ChromeDriver mismatch	Install matching ChromeDriver
 ```
 ---
-⚠️ Quick Start (for reviewers)
+## ⚠️ Quick Start (for reviewers)
 ```
 If you run on a clean machine:
 1. Install Google Chrome and ChromeDriver.
